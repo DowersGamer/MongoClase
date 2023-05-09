@@ -1,2 +1,38 @@
 use("sample_training");
-db.zips.find({state:"NY"}).count()
+//db.zips.find({state:"AL"})
+//db.zips.find({city:"ACMAR"})
+//db.zips.find({city:"BAILEYTON"})
+//db.zips.find({zip:"35019"})
+//db.zips.find({_id:"5c8eccc1caa187d17ca6ed23"})
+db.zips.insertMany({
+    "city": "RIO HACHA",
+    "zip": "03790",
+    "loc":{
+        "y": 48.263234,
+        "x": 70.129834
+    },
+    "city": "BOGOTA",
+    "zip": "03792",
+    "loc":{
+        "y": 49.263234,
+        "x": 22.129834
+    },
+    "city": "RIO JANEIRO",
+    "zip": "03722",
+    "loc":{
+        "y": 43.263234,
+        "x": 10.129834
+    },
+    "city": "CONNOR HACHA",
+    "zip": "03220",
+    "loc":{
+        "y": 28.263234,
+        "x": 40.129834
+    },
+    "city": "VILLETA",
+    "zip": "22790",
+    "loc":{
+        "y": 11.263234,
+        "x": 47.129834
+    }
+});
